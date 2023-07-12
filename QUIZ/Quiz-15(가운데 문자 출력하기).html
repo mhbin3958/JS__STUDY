@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>가운데 문자 출력하기</title>
+</head>
+<body>
+    <script>
+        function solution(s){
+            let answer="";
+            let mid = Math.floor(str.length/2);
+            
+            // 방법 1 : stubstring 이용
+            if(str.length%2==1){
+                answer = str.substring(mid, mid+1);
+            }
+            else{
+                answer = str.substring(mid-1, mid+1);
+            }
+            
+
+            return answer;
+        }
+        console.log(solution("study"));
+        console.log(solution("length"));
+    </script>
+</body>
+</html>

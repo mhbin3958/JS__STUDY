@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>차량 10부제</title>
+  </head>
+  <body>
+    <script>
+      function solution(day, arr) {
+        let answer = 0;
+
+        for (let x of arr) {
+          // console.log(x);
+          if (x % 10 === day) answer++;
+        }
+
+        return answer;
+      }
+      var arr = [65, 2, 3, 4, 7];
+      console.log(solution(3, arr));
+    </script>
+  </body>
+</html>
