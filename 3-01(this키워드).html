@@ -1,0 +1,46 @@
+<html>
+<head>
+    <title>this 키워드</title>
+</head>
+<body>
+    <input type="Button" value="로그인">
+    <button>클릭</button>
+    <button onclick="this.style.backgroundColor='red'">클릭1</button>
+    <button onclick="callFunc(this)">클릭</button>
+
+    <select onchange="changeSelect(this)">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+    <script>
+        function changeSelect(obj2){
+            console.log(obj2);
+            console.log(obj2.value);
+        }
+
+        function callFunc(obj1){
+            console.log(obj1);
+        }
+
+        //console.log(this);
+        //alert("화났다.");   //this는 window를 가리킴
+
+        // var person = {
+        //     firstName : "길동", lastName : "홍",
+        //     fullName : function(){
+        //         return this.firstName + " " + this.lastName;    //오브젝트의 this는 오브젝트를 가리킨
+        //     }
+        // }
+        // console.log(person.fullName());
+
+        // function myFunction(){
+        //     console.log(this);
+        // }
+
+        // myFunction();
+
+    </script>
+</body>
+</html>

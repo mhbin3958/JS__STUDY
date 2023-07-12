@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        var x1 = true;
+        var y1 = new Boolean("true");
+        console.log(x1);
+        console.log(y1)
+
+        console.log(typeof x1); // 출력값 : boolean
+        console.log(typeof y1); // 출력값 : object
+
+        console.log(x1 == y1); // == : 타입을 비교하지 않고, 숫자만 비교
+        console.log(x1 === y1); // JS에서는 "===" 로 비교해야함
+
+        var x2 = "LIMSUNGJIN";
+        var y2 = new String("LIMSUNGJIN");
+        console.log(typeof x2); // 출력값 : string
+        console.log(typeof y2); // 출력값 : object
+
+        console.log(x2 == y2);
+        console.log(x2 === y2);
+
+        console.log(Boolean(10 > 9)); // 출력값 : true (object 타입)
+        console.log(10 > 9); // 출력값 : true (Boolean 타입)
+
+        var x = 0;
+        console.log(x);
+        console.log(Boolean(x));
+
+        var x="";
+        console.log(Boolean(x));
+    </script>
+</body>
+</html>
